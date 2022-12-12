@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c9691cbf02.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+        background-color: aqua;
+    }
+.input-email {
+    margin-right: 20px;
+   }
+
+input {
+    width: 50vh;
+    height: 5vh;
+    margin-top: 20px;
+}
+.second-line {
+    width: 109vh;
+  
+}
+
+.searchbar {
+    margin-right: 20px;
+
+}
+
+.labelfor, .labelfor1 {
+    background-color: #777;
+    padding-top: 7.5px;
+   padding-bottom: 9.5px;
+   margin-right: 20px;
+
+}
+.labelfor1 {
+    padding-right: 5px;
+}
+
+
+
+.firstlabel {
+    background-color: #777;
+   padding-top: 8px;
+   padding-bottom: 9.5px;
+    padding-left: 2px; 
+    margin-right: 20px;
+   
+}
+
+    .secondlabel {
+        background-color: #777;
+        padding-top: 8px;
+        padding-bottom: 9.5px;
+        padding-right: 2px;
+    }
+
+    .flex-container {
+        display: flex; 
+        max-width: 120vh;
+        flex-direction: row-reverse; 
+
+    }
+
+    button {
+        background-color: purple;
+        margin-top: 30px;
+        padding: 10px 20px;
+        margin-right: 5px;
+    }
+
+    @media only screen and (max-width:620px){
+
+.input-email, .input, .second-line, .searchbar, .labelfor, .labelfor1, .firstlabel, .secondlabel, .flex-container, .button {
+    width: 100%;
+}
+
+
+ }
+
+  
+
+
+</style>
+<body>
+   
+
+  <div class="first-line">
+    <span class="envelope"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="input-email" type="text" name="Email" placeholder="Email">
+    <span class="Price"><i class="fa-solid fa-dollar-sign"></i></span>
+        <input name="price"  type="text"  placeholder="price" > </div>
+
+<div>
+    <span class="email"><i class="fa fa-envelope-o fa-fw"></i></span>
+    <input class="second-line" type="text" name="Email" id="" placeholder="email">
+</div> 
+
+<div>
+    <label class="labelfor" for="third-line">
+        <input type="text" name="search-bar">
+    <span class="searchbar"><i class="fas fa-search"></i></span>
+    </label>
+    <label class="labelfor1" for="third-line">
+        <input type="text" name="go">
+        <span class="letsgo">GO!</span>
+    </label>
+    
+</div>
+
+<div>
+    <label class="firstlabel" for="last-line">subscribe <input type="text" name="subscribe" placeholder="enter your email"></label>
+    <label class="secondlabel" for="last-line"> <input type="text" name="subscribe" placeholder="enter your email">subscribe</label>
+    
+</div>
+
+<div class="flex-container">
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+</div>
+
+    
+</body>
+</html>
+
